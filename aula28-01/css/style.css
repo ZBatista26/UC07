@@ -1,0 +1,58 @@
+/*Reset básico do css */
+
+*{
+    margin: 0%; /*Remover todas as margens*/
+    padding: 0%; /*Remover todo o preenchimento*/
+    box-sizing: border-box; /* Inclui bordas e preenchimento para calcular o tamanho */
+}
+
+/* seletor de tag */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6; /*Define o espaçamento entre linhas*/
+    color:#333; /* Define a cor do texto para cinza escuro*/
+    background-color: #f4f4f4; /* Define a cor de funco como cinza claro*/
+    padding: 10px; /* Adiciona espaçamento interno ao (body) */
+}
+header{
+    color: white;
+    background-color: #120f53;
+    text-align: center;
+    padding: 20px;
+}
+/*Formatar a barra de navegação */
+nav ul{
+    list-style: none; /* Remove os marcores padrão da lista*/
+    display: flex; /* Aplica o dysplay flexivel (lista comportamento padrão) */
+    justify-content: center; /* Centralizar os itens */
+    gap: 15px; /* Adiciona um espaçamento entre os itens */
+    
+}
+nav a{
+    color: white; /* Alterar cor do texto*/
+    text-decoration: none; /* Remode a decoração dos sublinhados dos links*/
+
+}
+nav a:hover{
+    text-decoration: underline; /*Adicionar um sublinhado ao passar o mouse sobre o link*/
+}
+
+section{
+    margin: 20px 0; /* Adiciona espaçamento vertical entre as seções */
+    padding: 15px;
+    background-color: white;
+    border-radius: 5px; /* Arredondar as bordas da section*/
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Adicionar um pouco de sombra a section, horizontal, vertical, esfumaçado*/
+}
+section h2{
+    color: #0056b3;
+    padding-bottom: 10px;
+}
+
+section ul{
+    margin-left: 20px;
+}
+section li{
+    margin-bottom: 5px;
+    padding: 2px;
+}

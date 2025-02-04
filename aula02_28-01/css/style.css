@@ -25,8 +25,8 @@ nav ul{
     list-style: none; /* Remove os marcores padrão da lista*/
     display: flex; /* Aplica o dysplay flexivel (lista comportamento padrão) */
     justify-content: center; /* Centralizar os itens */
-    gap: 15px; /* Adiciona um espaçamento entre os itens */
-    
+    gap: 20px; /* Adiciona um espaçamento entre os itens */
+
 }
 nav a{
     color: white; /* Alterar cor do texto*/

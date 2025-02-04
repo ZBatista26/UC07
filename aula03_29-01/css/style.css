@@ -1,0 +1,36 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header h1{
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: -1px;
+    
+}
+main p{
+    color: #666;
+    font-size: 16px;
+    margin: 20px;
+}
+.destaque{
+    color:#ff6600;
+}
+
+div {
+    font-size: 2em;
+}
+
+.pixel{
+    font: 20px verdana, arial, tahoma, sans-serif;
+}
+
+.tipografia{
+    font: 1.5em, verdana, arial, tahoma, sans-serif;
+}
+

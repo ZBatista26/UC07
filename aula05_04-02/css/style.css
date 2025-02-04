@@ -1,0 +1,112 @@
+:root{
+    --cor-primaria: #0077b6;
+    --cor-secundaria: #023e8a;
+    --cor-fundo:#f4f4f4;
+    --espacamento: 1.25rem;
+    --cor-texto: #333
+    --borda-arredondada: 0.625rem;
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f4f4f4;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: var(--cor-texto);
+}
+header {
+    background-color:var(--cor-primaria);
+    color: white;
+    padding: var(--espacamento);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: var(--espacamento);
+
+}
+nav a {
+    text-decoration: none;
+    color:white;
+}
+nav a:hover{
+    text-decoration:underline;
+}
+#palestrante{
+    padding: var(--espacamento);
+}
+
+.container{
+    text-align: center;
+    display: flex;
+    gap: var(--espacamento);
+    margin-top: var(--espacamento);
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card{
+    background-color: white;
+    border-radius: 20px;
+    padding: var(--espacamento);
+    text-align: center;
+    box-shadow: 0.3125rem 0.325rem 0.9275rem rgba(0, 0, 0,0.2);
+    width: 15rem;
+}
+.card img{
+    width: 100%;
+    height: 12rem;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.banner{
+    background-color: var(--cor-secundaria);
+    padding: var(--espacamento);
+    margin-top: var(--espacamento);
+    margin-bottom: var(--espacamento);
+    color: white;
+    text-align: center;
+}
+main h2{
+    margin-bottom: 20px;
+}
+main{
+    text-align: center;
+}
+
+
+
+#inscricao{
+    background-color: var(--cor-primaria);
+    color: white;
+    padding: 2rem;
+    margin-top: var(--espacamento);
+}
+#inscricao button{
+    background-color:white;
+    color: var(--cor-primaria);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+
+}
+#inscricao button:hover{
+    background-color: var(--cor-secundaria);
+    color: white;
+    transition: 0.5s;
+}
+
+footer{
+    background-color:var(--cor-primaria);
+    color: white;
+    text-align: center;
+    margin-top: var(--espacamento);
+    padding: var(--espacamento);
+}

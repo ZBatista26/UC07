@@ -1,0 +1,117 @@
+:root {
+    --cor-fundo: #333;
+    --cor-texto: #fff;
+    --cor-header: #222;
+    --cor-main: #111;
+    --cor-secao: #222;
+    --cor-borda: #444;
+
+    --fonte-padrao: Arial, sans-serif;
+    --tamanho-h1: 2rem;
+    --tamanho-h2: 1.5rem;
+    --tamanho-p: 1rem;
+
+    --padding-padrao: 1rem;
+    --padding-header: 2rem;
+    --margin-padrao: 1rem;
+
+    --largura-max-main: 75rem; /* 1200px convertido para rem */
+    --largura-imagens: 6.25rem; /* 100px */
+    --altura-imagens: 6.25rem; /* 100px */
+    --border-radius: 0.3125rem; /* 5px */
+    --border-size: 0.0625rem; /* 1px */
+}
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: var(--cor-fundo);
+
+}
+header{
+    color: white;
+    text-align: center;
+    background-color: var(--cor-header);
+    padding: var(--padding-header);
+}
+header img{
+    width: var(--altura-imagens);
+    height: var(--largura-imagens);
+    margin-top: var(--padding-padrao);
+    object-fit: cover;
+}
+h1{
+    font-size: 2rem;
+}
+main{
+    background-color: var(--cor-main);
+    display: flex;
+    flex-wrap: wrap;
+    margin: var(--margin-padrao) auto;
+    padding: var(--padding-padrao);
+    align-items: center;
+    max-width: var(--largura-max-main);
+
+}
+main h2{
+    font-size: 20px;
+}
+main p{
+    font-size: 14px;
+    margin-top: var(--margin-padrao);
+}
+section{
+    flex: 1;
+    background-color: var(--cor-secao);
+    margin: var(--margin-padrao);
+    padding: var(--padding-padrao);
+    border-radius: var(--border-radius);
+    border:var(--border-size) solid var(--cor-borda);
+}
+section p{
+    text-align: justify;
+}
+.band{
+    color: var(--cor-texto);
+    display: flex;
+    margin-bottom: var(--margin-padrao);
+    align-items: center;
+}
+
+.band img{
+    width:var(--altura-imagens);
+    height: var(--largura-imagens);
+    object-fit: cover;
+    margin-right: var(--margin-padrao);
+}
+
+.band-info{
+    flex: 1;
+}
+
+aside{
+    background-color: var(--cor-header);
+    color: var(--cor-texto);
+    margin: var(--margin-padrao);
+    border-radius: var(--border-radius);
+    padding: var(--padding-padrao);
+    border:var(--border-size) solid var(--cor-borda);
+    
+}
+aside p{
+    margin-top: var(--margin-padrao);
+    padding-bottom: var(--padding-padrao);
+    
+}
+footer{
+    
+    background-color: var(--cor-secao);
+    color: var(--cor-texto);
+    text-align: center;
+    padding: var(--padding-padrao);
+}

@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: rgb(239, 239, 239);
+}
+
+header{
+    display: flex;
+    background-color: rgb(34, 5, 111);
+    color: rgb(255, 255, 255);
+    padding-top: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding-bottom: 20px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+header > div > h1{
+    padding: 20px;
+    margin-top: -10px;
+    margin-left: 20px;
+}
+nav ul{
+    list-style: none; /* Remove os marcores padrão da lista*/
+    display: flex; /* Aplica o dysplay flexivel (lista comportamento padrão) */
+    gap: 20px; /* Adiciona um espaçamento entre os itens */
+    margin-left: 30%;
+
+}
+nav a{
+    color: white;
+    text-decoration: none;
+}
+nav a:hover{
+    text-decoration: double;
+    color: rgb(62, 75, 250);
+}
+
+main{
+    background-color: rgb(218, 218, 218);
+    margin: 20px;
+    border-radius: 10px;
+    height: 200%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+
+}
+
+main h2{
+    text-align: center;
+    margin-top: 20px;
+    color:  rgb(34, 5, 111);
+    
+}
+main p{
+    margin: 1rem;
+    gap: 20px;
+}

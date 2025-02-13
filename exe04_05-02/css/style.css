@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+        background: linear-gradient(100deg, #0a0a0a, #0f083b);  
+}
+
+header{
+    display: flex;
+    color: rgb(255, 255, 255);
+    padding-top: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding-bottom: 20px;
+}
+
+header > div > h1{
+    padding: 20px;
+    margin-top: -10px;
+    margin-left: 20px;
+}
+nav ul{
+    list-style: none; /* Remove os marcores padrão da lista*/
+    display: flex; /* Aplica o dysplay flexivel (lista comportamento padrão) */
+    gap: 20px; /* Adiciona um espaçamento entre os itens */
+    margin-left: 30%;
+
+}
+nav a{
+    color: white;
+    text-decoration: none;
+}
+nav a:hover{
+    text-decoration: double;
+    color: rgb(62, 75, 250);
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(255, 255, 255);
+    margin: 20px;
+    border-radius: 10px;
+    height: 200%;
+    box-shadow: 0 2px 6px rgba(253, 253, 253, 0.562);
+}
+
+main h2{
+    padding-top: 1rem;
+    padding-left: 1rem;
+    color:  rgb(50, 38, 95);
+    
+}
+main p{
+    margin: 1rem;
+    gap: 20px;
+    padding-bottom: 1rem;
+    
+}
+main > section img{
+    width: 100%;
+    padding-right: 20px;
+    margin-left: 20rem;
+    border-radius: 10px;
+
+}
+
+.container{
+    display: flex;
+    align-items: center; /* Alinha verticalmente */
+    gap: 20px; /* Espaço entre a imagem e o texto */
+}
+
+.texto{
+    flex: 1;
+}
+
+.imagem{
+    width: 300px;
+}
+aside{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    align-items: center;
+    margin: 10px auto;
+    padding: 20px;
+    max-width: 88rem;
+    
+
+}
+
+aside section{
+    display: flex;
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+    margin: 20px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition:  transform 0.3s ease, box-shadow 0.3s ease;
+}
+aside section:hover{
+    transform: scale(1.1); /* Aumenta o tamanho do card */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra maior */
+}
+aside h3{
+    margin: 20px;
+    color: rgb(50, 38, 95);
+    font-weight: bolder;
+}
+aside p{
+    margin: 20px;
+    font-size: 13px;
+    text-align: center;
+    color: #333;
+}
+li{
+    font-size: 13px;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+.baner{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items:start;
+    margin: 10px auto;
+    max-width: 30rem;
+    
+}
+.login-container {
+    
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    width: 500px;
+    text-align: center;
+    color: white;
+}
+label {
+    color: rgb(255, 255, 255);
+    display: block;
+    text-align: left;
+    margin: 5px 0;
+    font-weight: bold;
+}
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    background: #141E30;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+button:hover {
+    background: #243B55;
+}
+footer{
+    background: #141E30;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 20px;
+    
+}
+.footer-section {
+    margin: 10px;
+    max-width: 300px;
+}
+
+.footer-section p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+    opacity: 0.7;
+}
+section img{
+    width: 50px;
+    margin-top: 20px;
+}

@@ -30,11 +30,11 @@ function Main2(){
     return(
          <main className={Style.Main}>
             {
-                bandas.map((banda, index) => {
+                bandas.map((banda, index) => (
                     <section>
-                        <Band key={index} {...Band} />
+                        <Band key={index} {...banda} />
                     </section>
-                })
+                ))
             }
         </main>
     )

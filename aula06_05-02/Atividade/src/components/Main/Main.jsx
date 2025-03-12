@@ -23,6 +23,7 @@ function Main(){
                 </div>
             </div>
         </section>
+
         <section>
             <div className={Style.Band}>
                 <img src="https://m.media-amazon.com/images/I/91WaJU5cCXL._AC_UF1000,1000_QL80_.jpg" alt="Banda 2"/>
@@ -32,6 +33,7 @@ function Main(){
                 </div>
             </div>
         </section>
+        
         <section>
             <div className={Style.Band}>
                 <img src="https://m.media-amazon.com/images/I/91WaJU5cCXL._AC_UF1000,1000_QL80_.jpg" alt="Banda 2"/>

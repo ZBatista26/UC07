@@ -1,0 +1,62 @@
+:root {
+    --cor-fundo: #333;
+    --cor-texto: #fff;
+    --cor-header: #222;
+    --cor-main: #111;
+    --cor-secao: #222;
+    --cor-borda: #444;
+    --fonte-padrao: Arial, sans-serif;
+    --tamanho-h1: 2rem;
+    --tamanho-h2: 1.5rem;
+    --tamanho-p: 1rem;
+    --padding-padrao: 1rem;
+    --padding-header: 2rem;
+    --margin-padrao: 1rem;
+    --largura-max-main: 75rem;
+    --largura-imagens: 6.25rem;
+    --altura-imagens: 6.25rem;
+    --border-radius: 0.3125rem;
+    --border-size: 0.0625rem;
+   }
+
+.Main {
+    max-width: var(--largura-max-main);
+    margin: var(--padding-header) auto;
+    background-color: var(--cor-main);
+    padding: var(--padding-header);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Main section {
+    flex: 1;
+    margin: var(--margin-padrao);
+    padding: var(--padding-padrao);
+    background-color: var(--cor-secao);
+    border: var(--border-size) solid var(--cor-borda);
+    border-radius: var(--border-radius);
+
+}
+
+.Band {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--margin-padrao);
+}
+
+.Band img {
+    width: var(--largura-imagens);
+    height: var(--altura-imagens);
+    object-fit: cover;
+    margin-right: var(--margin-padrao);
+}
+.Bandinfo {
+    flex: 1;
+}
+
+.Main section a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+    
+}

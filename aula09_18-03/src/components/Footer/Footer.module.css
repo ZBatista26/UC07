@@ -1,0 +1,14 @@
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    text-align: center;
+    padding: var(--padding-padrao);
+    background-color: var(--cor-header);
+    color: white;
+}
+
+.footer p {
+    font-size: var(--tamanho-p);
+    text-align: justify;
+}

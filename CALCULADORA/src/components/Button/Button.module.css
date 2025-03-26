@@ -1,0 +1,20 @@
+button {
+    background-color: rgb(255, 255, 255);
+    color: blue;
+    width: 150px;
+    height: 40px;
+
+}
+button:before {
+    background-color: blueviolet;
+    height: 150px;
+    width: 40px;
+    top: 100%;
+    left: 100%;
+    transition: all 0.7s;
+}
+
+button:hover::before {
+    top: -30px;
+    left: -30px;
+}

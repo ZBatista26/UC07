@@ -17,6 +17,7 @@ function TipCalculator(){
     }
    return(
     <div className={Style.Calculador}>
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" />
     <h1>Calculadora de Gorjeta</h1>
     <InputField label="Valor da Compra:" 
     value={valorConta}

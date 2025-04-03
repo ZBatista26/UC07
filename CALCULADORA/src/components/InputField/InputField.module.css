@@ -1,0 +1,32 @@
+label{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-family: 'Orbitron', sans-serif;
+    margin-bottom: 5px;
+    
+}
+
+.Container {
+    
+    flex-direction: column;
+    margin: 15px;
+    padding: 5px;
+    position: relative;
+    /* background-color: brown; */
+}
+input{
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: end;
+    width: 100%;
+    height: 2.5rem;
+    color: rgb(0, 0, 0);
+    background-color: #a9afac;
+    font-family: 'Orbitron', sans-serif;
+    border-radius: 0.5rem;
+}
+
+input-field{
+    background-color: blue;
+}
+

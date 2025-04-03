@@ -1,20 +1,32 @@
 .Calculador{
     margin: 150px;
-    position: relative;
     width:380px;
-    height: 380px;
+    height: 350px;
     margin-left: auto;
     margin-right: auto;
-    background-color: #0d1d75;
-    box-shadow: 10px 5px 5px black;
+    background-color: #393a3f;
+    box-shadow: 15px -13px 1px  #202124;
     border-radius: 5% 0%;
     display: flex;
     flex-direction: column;
     
 }
-h1{
-    color: rgb(255, 255, 255);
-    font-size: 30px;
+div-h1{
+    display: flex;
     text-align: center;
-    padding-top: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+}
+h1{
+    text-align: center;
+    background-color:#a9afac;
+    border-radius: 0.5rem;
+    margin: 15px;
+    padding: 11px;
+    color: rgb(27, 27, 27);
+    font-size: 25px;
+    font-family:'Orbitron', sans-serif;
+    box-shadow: 3.3px 6.6px 6.6px hsl(0deg 0% 0% / 0.40);;
 }

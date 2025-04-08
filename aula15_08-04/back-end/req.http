@@ -1,0 +1,15 @@
+
+
+###
+POST http://localhost:3000/endereco
+Content-Type: application/json
+
+
+    {
+	"matricula": "a1234",
+	"cep": "59074120",
+	"numero": "313",
+	"ponto_referencia": "marcado são francisco"
+}
+
+###

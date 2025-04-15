@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@tailwindcss/vite": "^4.1.4",
     "axios": "^1.8.4",
     "dotenv": "^16.4.7",
     "pg": "^8.14.1",

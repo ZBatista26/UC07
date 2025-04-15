@@ -1,58 +1,88 @@
 import React, {useState} from "react";
+import styles from './CadastrarAluno.module.css';
 import { criar } from "../../../service/alunoService";
-import  Styles  from '../CadastrarAluno/CadastrarAluno.modules.css'
 
-function CadastrarAluno(){
+
+function CadastrarAluno({onCadastro}){
     const[matricula, setMatricula] = useState('');
+
     const[nome, setNome] = useState('');
     const[email, setEmail] = useState('');
     const[senha, setSenha] = useState('');
-    const[errorMsg, setErrorMsg] = useState('');
-    const[sucessoMsg, setSucessoMsg] = useState('');
+    const[mensagem, setMensagem] = useState('');
 
-    async function criarAluno() {
+    async function handleSubmit(event) {
+        event.preventDefault(); // Previne o comportamento padrão do formulário
+    
         try {
-            await criar({matricula, nome,  email, senha});
-            setSucessoMsg('Aluno cadastrado com sucesso!');
-            setErrorMsg('')
+          await criar({ matricula, nome, email, senha });
+          setMensagem('Aluno cadastrado com sucesso!');// Informação de sucesso no cadastro
+    
+          // Limpar os campos
+          setMatricula('');
+          setNome('');
+          setEmail('');
+          setSenha('');
+          // Dispara o gatilho para ListarAlunos recarregar
+          onCadastro(); // Chama a função passada via prop, que é handleRefresh do componente pai
+    
         } catch (error) {
-            setErrorMsg(error.response.data.msg);
+          setMensagem(error.response.data.msg || 'Erro ao cadastrar aluno.'); // Mensagem de erro caso o cadastro falhe
         }
-    }
-    return(
-        <div>
-            <h2>Cadastrar Aluno</h2>
-            <input 
-                type="text"
-                value={matricula}
-                onChange={(e) => setMatricula(e.target.value)}
-                placeholder="Digite o número da matricula"
-            />
-            <input 
-                type="text"
-                value={nome}
-                onChange={(e) => setNome(e.target.value)}
-                placeholder="Digite o nome"
-            />
-            
-            <input 
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="Digite seu e-mail"
-            />
-            <input 
-                type="password"
-                value={senha}
-                onChange={(e) => setSenha(e.target.value)}
-                placeholder="Digite seua senha"
-            />
-            <button onClick={criarAluno}>Cadastrar</button>
-            {errorMsg && <p>{errorMsg}</p>}
-            {sucessoMsg && <p>{sucessoMsg}</p>}
-        </div>
-    );
+      }
 
-}
+      return (
+        <div className={styles.container}>
+          <h2>Cadastrar Aluno</h2>
+          <form onSubmit={handleSubmit} className={styles.form}>
+            
+            <label htmlFor="matricula">Matrícula:</label>
+            <input
+              id="matricula"
+              type="text"
+              value={matricula}
+              onChange={(e) => setMatricula(e.target.value)}
+              className={styles.input}
+              required
+            />
+    
+            <label htmlFor="nome">Nome:</label>
+            <input
+              id="nome"
+              type="text"
+              value={nome}
+              onChange={(e) => setNome(e.target.value)}
+              className={styles.input}
+              required
+            />
+    
+            <label htmlFor="email">Email:</label>
+            <input
+              id="email"
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              className={styles.input}
+              required
+            />
+    
+            <label htmlFor="senha">Senha:</label>
+            <input
+              id="senha"
+              type="password"
+              value={senha}
+              onChange={(e) => setSenha(e.target.value)}
+              className={styles.input}
+              required
+            />
+    
+            <button type="submit" className={styles.button}>Cadastrar</button>
+          </form>
+    
+          {mensagem && <p className={styles.message}>{mensagem}</p>}
+        </div>
+      );
+    }
+
 
 export default CadastrarAluno;

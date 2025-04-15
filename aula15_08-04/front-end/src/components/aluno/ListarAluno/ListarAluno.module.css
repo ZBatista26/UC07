@@ -1,0 +1,27 @@
+.container {
+    border: 1px solid #ccc;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    background-color: #ffffff;
+    font-size: 0.9rem;
+    width: 50%;
+    height: 50%;
+    margin: 2rem;
+    
+  }
+  .titulo {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+  .lista{
+    list-style-type:decimal;
+    line-height: 2rem;
+  }
+  .aluno {
+    margin-bottom: 0.4rem;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.3rem;
+    
+  }

@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from "react";
+import Styles from "./ListarAluno.module.css"
 import {listarTodos} from "../../../service/alunoService";
-import Styles from './ListarAlunos';
 
-function ListarAlunos(){
+function ListarAlunos({refreshTrigger}){
     const [alunos, setAlunos] = useState([]); // estado para armazenar a lista de alunos
     const [errorMsg, setErrorMsg] = useState('');
 
@@ -19,17 +19,17 @@ function ListarAlunos(){
 
 useEffect(()=>{
     fetchAlunos();// Chama a função para buscar os alunos.
-}, [])// o array vazio garante que a função seja chamada apenas uma vez quando o componente for montado.
+}, [refreshTrigger])// o array vazio garante que a função seja chamada apenas uma vez quando o componente for montado.
 
 return(
-    <div>
-        <h2>Lista de Alunos</h2>
+    <div className={Styles.container}>
+        <h2 className={Styles.titulo}>Lista de Alunos</h2>
         {errorMsg && <p>{errorMsg}</p>} {/* exibe mensagem de erro se houver*/}
 
-        <ul>
+        <ul className={Styles.lista}>
             {
                 alunos.map((aluno) =>(
-                    <li key={aluno.matricula}> {/* a key indica a referencia de cada registro (única)                                                                                            */}
+                    <li key={aluno.matricula} className={Styles.aluno}> {/* a key indica a referencia de cada registro (única)                                                                                            */}
                         {aluno.nome} - {aluno.email} - Matricula:{aluno.matricula}
                     </li>
                 ))

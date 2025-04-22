@@ -1,0 +1,17 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  
+    width: 90vw;
+    height: 100vh;
+    margin: auto;
+  }
+
+  @media screen and (min-width:668px){
+    main{
+        background-color: rgb(0, 0, 0);
+        color: white;
+        flex-direction: row;
+    }
+}

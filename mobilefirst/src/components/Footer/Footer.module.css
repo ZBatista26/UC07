@@ -1,0 +1,7 @@
+footer {
+    background-color: var(--thead-footer-bgcolor);
+    padding: 1rem 1rem 2rem 1rem;
+  
+    text-align: center;
+    margin-top: 4rem;
+  }

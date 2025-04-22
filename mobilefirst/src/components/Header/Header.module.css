@@ -1,0 +1,33 @@
+header {
+    text-align: center;
+  }
+  
+  header h1 {
+    background-color: #3498db;
+  
+    padding: 1.5rem;
+  }
+  
+  header nav {
+    background-color: #2980b9;
+  
+    padding: 0.75rem;
+  }
+  
+  header nav ul {
+    list-style-type: none;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  header nav ul li {
+    width: 10rem;
+  }
+  
+  header nav ul li a {
+    text-decoration: none;
+    color: var(--color-nav-header-th-footer);
+  }

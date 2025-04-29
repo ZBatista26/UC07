@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: "Roboto", sans-serif;
+    background: linear-gradient(to right, rgb(61, 61, 255), rgb(92, 92, 255)) ;
+    color: #333;
+    line-height: 1.6rem;
+}
